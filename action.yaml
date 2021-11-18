@@ -6,8 +6,8 @@ runs:
   steps:
     - name: prepare npmrc
       run: |
-        echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > .npmrc
-        echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" >> .npmrc
+        echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > .npmrc
+        echo "//npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}" >> .npmrc
         echo "@extrahorizon:registry=https://npm.pkg.github.com" >> .npmrc
         echo "@fibricheck:registry=https://npm.pkg.github.com" >> .npmrc
       shell: sh
