@@ -17,4 +17,4 @@ runs:
         echo "//npm.pkg.github.com/:_authToken=${{inputs.GITHUB_TOKEN}}" >> .npmrc
         echo "@extrahorizon:registry=https://npm.pkg.github.com" >> .npmrc
         echo "@fibricheck:registry=https://npm.pkg.github.com" >> .npmrc
-      shell: bash
+      shell: sh
