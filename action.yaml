@@ -1,12 +1,5 @@
 name: "Prepare npmrc"
 description: "Prepares the .npmrc file with the required creds"
-inputs:
-  NPM_TOKEN:
-    description: "The npm token to be set in .npmrc"
-    required: true
-  GITHUB_TOKEN:
-    description: "The GitHub token to be set in .npmrc"
-    required: true
 
 runs:
   using: composite
