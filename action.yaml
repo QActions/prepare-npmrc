@@ -9,6 +9,5 @@ runs:
         echo "//registry.npmjs.org/:_authToken=${{env.NPM_TOKEN}}" > .npmrc
         echo "//npm.pkg.github.com/:_authToken=${{env.GITHUB_TOKEN}}" >> .npmrc
         echo "@extrahorizon:registry=https://npm.pkg.github.com" >> .npmrc
-        echo "@qompium:registry=https://npm.pkg.github.com" >> .npmrc
         echo "@fibricheck:registry=https://npm.pkg.github.com" >> .npmrc
       shell: sh
